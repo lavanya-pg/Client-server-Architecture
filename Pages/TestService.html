@@ -17,7 +17,7 @@
             margin-top: 50px;
         }
     </style>
-    <script src="../services/http_service.js"></script>
+    <script src="C:\Users\Lavanya\Desktop\Client Server Architecture\Services\httpService.js"></script>
 </head>
 <body>
     <h1>The Test Serices Result</h1>
@@ -27,7 +27,7 @@
     <script>
         const getElem=document.querySelector('#get_services');
         const getURL="http://127.0.0.1:3000/employeePayrollDB/1";
-        makePromiseCall("GET",getURL,true).then(responseText=>{
+        makeServiceCall("GET",getURL,true).then(responseText=>{
             getElem.textContent="Get User Data: "+responseText;
         })
         .catch(error=>{
@@ -36,7 +36,7 @@
 
         const deleteElem=document.querySelector('#delete_services');
         const deleteURL="http://127.0.0.1:3000/employeePayrollDB/4";
-        makePromiseCall("DELETE",deleteURL,false)
+        makeServiceCall("DELETE",deleteURL,false)
             .then(responseText=>{
                 deleteElem.textContent="Delete Data: "+responseText;
             })
@@ -58,7 +58,7 @@
                 _note:'',
                 _profilePic:'../assets/profile-images/Ellipse -1.png'
             };
-            makePromiseCall("POST",postURL,true,emplData)
+            makeServiceCall("POST",postURL,true,emplData)
                     .then(responseText=>{
                         postElem.textContent="New User Data: "+responseText;
                     })

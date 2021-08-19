@@ -35,18 +35,6 @@
       "_StartDate": "29 Oct 2019",
       "_note": "",
       "_profilePic": "../assets/profile-images/Ellipse -1.png",
-      "id": 4
-    },
-    {
-      "_name": "Ranganath",
-      "_gender": "male",
-      "_department": [
-        "Sales"
-      ],
-      "_salary": "400000",
-      "_StartDate": "29 Oct 2019",
-      "_note": "",
-      "_profilePic": "../assets/profile-images/Ellipse -1.png",
       "id": 5
     },
     {
@@ -420,6 +408,18 @@
       "_note": "",
       "_profilePic": "../assets/profile-images/Ellipse -1.png",
       "id": 36
+    },
+    {
+      "_name": "Ranganath",
+      "_gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_StartDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "../assets/profile-images/Ellipse -1.png",
+      "id": 37
     }
   ]
 }
