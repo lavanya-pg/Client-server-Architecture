@@ -17,7 +17,7 @@
             margin-top: 50px;
         }
     </style>
-    <script src="C:\Users\Lavanya\Desktop\Client Server Architecture\Js\httpService.js"></script>
+    <script src="../services/http_service.js"></script>
 </head>
 <body>
     <h1>The Test Serices Result</h1>
@@ -35,7 +35,7 @@
         });
 
         const deleteElem=document.querySelector('#delete_services');
-        const deleteURL="http://127.0.0.1:3000/employeePayrollDB/3";
+        const deleteURL="http://127.0.0.1:3000/employeePayrollDB/4";
         makePromiseCall("DELETE",deleteURL,false)
             .then(responseText=>{
                 deleteElem.textContent="Delete Data: "+responseText;
